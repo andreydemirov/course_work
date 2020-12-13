@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="270.0" prefWidth="755.0" styleClass="background" stylesheets="@application.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ResultController">
+   <children>
+      <Label layoutX="293.0" layoutY="42.0" text="Total processes" />
+      <TextField fx:id="totalProcessesText" editable="false" layoutX="292.0" layoutY="68.0">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="rejectedProcessesText" editable="false" layoutX="532.0" layoutY="136.0">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font></TextField>
+      <Label layoutX="532.0" layoutY="111.0" text="Rejected processes" />
+      <TextField fx:id="completeProcessesText" editable="false" layoutX="292.0" layoutY="136.0">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font></TextField>
+      <Label layoutX="293.0" layoutY="111.0" text="Complete processes" />
+      <TextArea fx:id="coresCompleteProcessesText" layoutX="14.0" layoutY="55.0" prefHeight="200.0" prefWidth="256.0">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font></TextArea>
+      <Label layoutX="40.0" layoutY="21.0" text="Completed processes by Cores" />
+      <TextField fx:id="averageWaitingTactsText" editable="false" layoutX="532.0" layoutY="68.0">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </TextField>
+      <Label layoutX="532.0" layoutY="42.0" text="Average waiting time" />
+      <TextField fx:id="idleTimeText" editable="false" layoutX="532.0" layoutY="201.0">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </TextField>
+      <Label layoutX="532.0" layoutY="173.0" text="Idle time" />
+      <TextField fx:id="averageRunningTimeText" editable="false" layoutX="292.0" layoutY="201.0">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </TextField>
+      <Label layoutX="293.0" layoutY="173.0" text="Average process  running time" />
+   </children>
+</AnchorPane>
